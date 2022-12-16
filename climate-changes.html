@@ -1,0 +1,269 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>التغيرات المناخية</title>
+    <!-- Fontawsome library -->
+    <link rel="stylesheet" href="CSS/all.min.css" />
+    <!-- normalize library -->
+    <link rel="stylesheet" href="CSS/normalize.css" />
+    <!-- climate-changes css file -->
+    <link rel="stylesheet" href="CSS/climate-changes.css" />
+    <!-- website icon -->
+    <link rel="icon" href="images/logo.icon" />
+    <!-- google fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <!-- Start loading animation section -->
+    <div class="loading">
+      <div class="dot dot-1"></div>
+      <div class="dot dot-2"></div>
+      <div class="dot dot-3"></div>
+    </div>
+    <script type="text/javascript">
+      window.addEventListener("load", function () {
+        const loading = document.querySelector(".loading");
+        loading.className += " hidden"; //class loading + class hidden
+      });
+    </script>
+    <!-- End loading animation section -->
+
+    <!-- Start Header -->
+    <div class="header">
+      <div class="container">
+        <div class="logo">
+          <a href="index.html" title="الصفحة الرئيسية"
+            ><img src="images/الموسوعة-الحيوية.png" alt="logo"
+          /></a>
+        </div>
+        <div class="searchbox">
+          <div class="icon">
+            <i class="search fa fa-search" aria-hidden="true"></i>
+          </div>
+          <div class="input">
+            <input type="text" placeholder="search" id="search" />
+            <i class="clear fa fa-times"></i>
+          </div>
+        </div>
+        <script>
+          let search = document.querySelector(".search");
+          let clear = document.querySelector(".clear");
+
+          search.onclick = function () {
+            document.querySelector(".searchbox").classList.toggle("active");
+          };
+
+          clear.onclick = function () {
+            document.getElementById("search").value = "";
+          };
+        </script>
+        <div class="links">
+          <span class="icon">
+            <span></span>
+            <span></span>
+            <span></span>
+          </span>
+          <ul>
+            <li><a href="#subtitle">ما هو التغير المناخي ؟</a></li>
+            <li>
+              <a href="#subtitle-1">مصادر غازات الاحتباس الحراري</a>
+            </li>
+            <li>
+              <a href="#subtitle-2">ما اسباب تغير المناخ ؟</a>
+            </li>
+            <li>
+              <a href="#subtitle-3">ما اثار تغير المناخ ؟</a>
+            </li>
+            <li>
+              <a href="#subtitle-4">اهم اقتراحات للحد من تأثير تغير المناخ</a>
+            </li>
+            <li>
+              <a href="#subtitle-5">خاتمة</a>
+            </li>
+            <li>
+              <a href="http://localhost:3000" target="_blank">المساعد الصوتي</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    <!-- End Header -->
+    <!-- Start components -->
+    <div class="components">
+      <div class="container">
+        <div class="components-content">
+          <h2 class="title">التغيرات المناخية</h2>
+          <p class="title-1">و سبل مواجهة اثارها</p>
+          <div class="subtitle" id="subtitle">
+            <h2>ما هو التغير المناخي ؟</h2>
+          </div>
+          <div class="text">
+            <p class="p1">
+              تعرف ظاهرة "تغير المناخ" بأنها اختلال في الظروف المناخية المعتادة
+              كالحرارة و انماط الرياح التي تميز كل منطقة على الارض. و تؤدي وتيرة
+              و حجم التغيرات المناخية الشاملة على المدى البعيد الى تأثيرات هائلة
+              على الانظمة الحيوية الطبيعية, كما ستؤدي درجات الحرارة المتفاقمة
+              الى تغيير في انواع الطقس كأنماط الرياح و انواعها, اضافة الى حدوث
+              عدة احوال مناخية قسوى. وقد سجلت درجات الحرارة لسطح الارض زيادة
+              مطردة خلال المائة عام الماضية تتراوح بين 0.5 و 0.7 درجة مئوية. حيث
+              ادت الانشطة البشرية المتمثلة في الثورة الصناعية و التكنولوجية الى
+              زيادة معدلات انبعاث غازات الاحتباس الحراري و زيادة تركيزها بالغلاف
+              الجوي.
+            </p>
+          </div>
+          <div class="video">
+            <iframe
+              width="425"
+              height="239.0625"
+              src="https://www.youtube.com/embed/G4H1N_yXBiA?rel=0"
+              title="YouTube video player"
+              frameborder="0"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+              allowfullscreen
+            ></iframe>
+          </div>
+          <div class="vid-caption">
+            <p class="caption">فيديو توضيحي عن التغيرات المناخية</p>
+          </div>
+          <div class="subtitle-1" id="subtitle-1">
+            <h2>مصادر غازات الاحتباس الحراري</h2>
+            <p>:غازات الاحتباس الحراري الستة الرئيسية</p>
+          </div>
+          <div class="text-1">
+            <p class="examples">"CO2" ثاني اكسيد الكربون</p>
+            <p class="examples">"CH4" الميثان</p>
+            <p class="examples">"N2O" ثاني اكسيد النيتروز</p>
+            <p class="examples">"PFCs" مركبات البيروفلوروكربون</p>
+            <p class="examples">"HFCs" مركبات الهيدروفلوروكربون</p>
+            <p class="examples">"SF6" سادس فلوريد الكربون</p>
+            <p class="gases-info">
+              و تعمل غازات الاحتباس الحراري المذكورة على قيام الغلاف الجوي بحبس
+              جزء من طاقة الشمس لتدفئة الكرة الارضية و الحفاظ على اعتدال المناخ.
+              ولا تشكل تلك الغازات مصادر تلوث بقدر كونها مؤثرة على ظاهرة
+              الاحترار العالمي. حيث يشكل ثاني اكسيد الكربون احد اهم الغازات التي
+              تساهم في مضاعفة تلك الظاهرة اذ يتم انتاجه اثناء حرق الفحم و النفط
+              و الغاز الطبيعي في مصانع الطاقة و السيارات و غيرها. اضافة الى عدم
+              امتصاصه بسبب ازالة الاعداد الكبيرة من الغابات. هناك غاز اخر مؤثر و
+              هو الميثان المنبعث من مزارع الارز و تربية البقر و مدافن المخلفات و
+              اشغال المناجم و انابيب الغاز. اما ثاني اكسيد النيتروز الناتج عن
+              الاسمدة و الكيماويات فهو يساهم ايضا في احتباس الحرارة.
+            </p>
+          </div>
+          <div class="subtitle-2" id="subtitle-2">
+            <h2>ما اسباب تغير المناخ ؟</h2>
+          </div>
+          <div class="text-2">
+            <p class="sub-subtitle">
+              تتعدد أسباب ظهور مشكلة تغير المناخ، من أهمها ما يلي
+            </p>
+            <p>
+              أدت الزيادة في النشاط البشري إلى ارتفاع درجة الحرارة، وأدت الأنشطة
+              الصناعية التي يقوم بها الإنسان إلى زيادة نسبة الغازات المسببة
+              للاحتباس الحراري في الأرض، مثل الميثان وثاني أكسيد الكربون.
+            </p>
+            <p>
+              تعد إزالة الغابات إحدى المشكلات التي أدت إلى تغير المناخ، خاصة وأن
+              الأشجار تستهلك ثاني أكسيد الكربون، وهو أحد الأسباب الرئيسية لتغير
+              المناخ.
+            </p>
+            <p>
+              يعني النقل لأنه ينبعث منه العديد من غازات الدفيئة التي تؤدي إلى
+              الاحتباس الحراري، وهو سبب رئيسي لمشكلة تغير المناخ
+            </p>
+            <p>
+              يعتبر تصنيع البضائع من الأسباب التي أدت إلى ظهور مشكلة تغير
+              المناخ، لأن عملية تصنيع البضائع تستهلك الوقود الأحفوري ؛ مما يؤدي
+              إلى انبعاث العديد من الغازات المسببة للاحتباس الحراري في الهواء.
+            </p>
+          </div>
+          <div class="image">
+            <img
+              class="img-1"
+              src="images/climate changes/التغيرات-المناخية-1.png"
+              alt="صورة للتغيرات المناخية"
+              title="التغيرات المناخية"
+            />
+            <img
+              class="img-2"
+              src="images/climate changes/التغيرات-المناخية-2.png"
+              alt="صورة للتغيرات المناخية"
+              title="التغيرات المناخية"
+            />
+          </div>
+          <div class="subtitle-3" id="subtitle-3">
+            <h2>ما آثار تغير المناخ ؟</h2>
+          </div>
+          <div class="text-3">
+            <p>
+              ارتفاع في درجة الحرارة نتيجة زيادة تركيز غازات الدفيئة في الغلاف
+              الجوي
+            </p>
+            <p>عواصف قوية أدت إلى تدمير العديد من مناطق كوكب الأرض</p>
+            <p>
+              ازدياد معدل الجفاف في العالم نتيجة ارتفاع درجات الحرارة ؛ يؤدي إلى
+              جفاف العديد من مناطق الأرض
+            </p>
+            <p>
+              انقراض العديد من الكائنات الحية لأن العديد من الكائنات الحية لا
+              تستطيع التكيف مع تغير المناخ
+            </p>
+            <p>
+              انتشار الجوع والفقر نظرًا لأن العديد من المناطق قد دمرها تغير
+              المناخ، يمكن أن تؤدي هذه التغييرات إلى زلازل وعواصف شديدة ومدمرة
+            </p>
+            <p>
+              انتشار العديد من الأمراض نتيجة لتغير المناخ وآثاره مثل تلوث البيئة
+              وظواهر مناخية جديدة على السكان يمكن أن تصيب السكان بالمرض
+            </p>
+          </div>
+          <div class="subtitle-4" id="subtitle-4">
+            <h2>أهم اقتراحات للحد من تأثير تغير المناخ</h2>
+          </div>
+          <div class="text-4">
+            <p class="sub-subtitle-1">
+              تعد ظاهرة التغير المناخي من الظواهر البيئية التي كان لها تأثير
+              كبير على البشرية والكوكب، لذلك من الضروري معالجة هذه المشكلة والحد
+              من أسبابها، سيوفر لك ما يلي الحلول المقترحة للحد من مشكلة التغيير
+              البيئي
+            </p>
+            <p>
+              غرس الأشجار، لأن الأشجار تستهلك ثاني أكسيد الكربون مما يؤدي إلى
+              الاحتباس الحراري، لأن هذه الأشجار تقلل من نسبة ثاني أكسيد الكربون
+              وتزيد من نسبة الأكسجين في الهواء
+            </p>
+            <p>
+              توقف عن دعم الوقود الأحفوري لأن هذه الأنواع من الوقود تنبعث منها
+              العديد من غازات الدفيئة التي تؤدي إلى الاحتباس الحراري
+            </p>
+            <p>
+              زيادة استخدام الطاقة المتجددة والاعتماد على ضوء الشمس كمصدر أساسي
+              للطاقة، حيث سيؤدي ذلك إلى تقليل انبعاثات غازات الاحتباس الحراري في
+              الأرض
+            </p>
+          </div>
+          <div class="subtitle-5" id="subtitle-5">
+            <h2>خاتمة</h2>
+          </div>
+          <div class="text-5">
+            <p>
+              وخلاصة القول إن مشكلة التغير المناخي من المشاكل البيئية التي نشأت
+              بسبب الإنسان، فهذه المشكلة لم تكن موجودة من قبل إلا للإنسان
+              والاختراعات التي اخترعها، وهذه المشكلة فاقمت وزادت من حدتها، يجب
+              الحد من استخدام المواد والأشياء التي تؤدي إلى تغير المناخ، إيجاد
+              حل لمشكلة الكثافة السكانية ؛ لأنه سبب رئيسي لتغير المناخ
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- End components -->
+  </body>
+</html>

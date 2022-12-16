@@ -1,0 +1,276 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>التسويق الرقمي</title>
+    <!-- Fontawsome library -->
+    <link rel="stylesheet" href="CSS/all.min.css" />
+    <!-- normalize library -->
+    <link rel="stylesheet" href="CSS/normalize.css" />
+    <!-- digital marketing css file -->
+    <link rel="stylesheet" href="CSS/digital-marketing.css" />
+    <!-- website icon -->
+    <link rel="icon" href="images/logo.icon" />
+    <!-- google fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <!-- Start loading animation section -->
+    <div class="loading">
+      <div class="dot dot-1"></div>
+      <div class="dot dot-2"></div>
+      <div class="dot dot-3"></div>
+    </div>
+    <script type="text/javascript">
+      window.addEventListener("load", function () {
+        const loading = document.querySelector(".loading");
+        loading.className += " hidden"; //class loading + class hidden
+      });
+    </script>
+    <!-- End loading animation section -->
+
+    <!-- Start Header -->
+    <div class="header">
+      <div class="container">
+        <div class="logo">
+          <a href="index.html" title="الصفحة الرئيسية"
+            ><img src="images/الموسوعة-الحيوية.png" alt="logo"
+          /></a>
+        </div>
+        <div class="searchbox">
+          <div class="icon">
+            <i class="search fa fa-search" aria-hidden="true"></i>
+          </div>
+          <div class="input">
+            <input type="text" placeholder="search" id="search" />
+            <i class="clear fa fa-times"></i>
+          </div>
+        </div>
+        <script>
+          let search = document.querySelector(".search");
+          let clear = document.querySelector(".clear");
+
+          search.onclick = function () {
+            document.querySelector(".searchbox").classList.toggle("active");
+          };
+
+          clear.onclick = function () {
+            document.getElementById("search").value = "";
+          };
+        </script>
+        <div class="links">
+          <span class="icon">
+            <span></span>
+            <span></span>
+            <span></span>
+          </span>
+          <ul>
+            <li><a href="#subtitle">ما المقصود بالتسويق الرقمي</a></li>
+            <li>
+              <a href="#subtitle-1">اهمية التسويق الرقمي</a>
+            </li>
+            <li>
+              <a href="#subtitle-2">بعض استراتيجيات التسويق الرقمي</a>
+            </li>
+            <li>
+              <a href="#subtitle-3">مميزات التسويق الرقمي</a>
+            </li>
+            <li>
+              <a href="#subtitle-4">مستقبل التسويق الرقمي</a>
+            </li>
+            <li>
+              <a href="http://localhost:3000" target="_blank">المساعد الصوتي</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    <!-- End Header -->
+    <!-- Start components section -->
+    <div class="components">
+      <div class="container">
+        <div class="components-content">
+          <h2 class="title">التسويق الرقمي</h2>
+          <div class="subtitle" id="subtitle">
+            <h2>ما المقصود بالتسويق الرقمي ؟</h2>
+          </div>
+          <div class="text">
+            <p>
+              يشير التسويق الرقمي إلى إنشاء المحتوى ونشره من خلال قنوات الوسائط
+              الرقمية—مواقع الويب، والصفحات الترحيبية، والوسائط الاجتماعية،
+              والبريد الإلكتروني، وتطبيقات الأجهزة المحمولة—والترويج لذلك
+              المحتوى باستخدام مجموعة متنوعة من الاستراتيجيات عبر القنوات
+              SEMوSEO الرقمية المدفوعة، والمكتسبة، والمملوكة، بما في ذلك وإعلان
+              الدفع عند النقر (PPC)، ومشاركة المحتوى، والوسائط الاجتماعية،
+              والبريد الإلكتروني، والنص، وغير ذلك الكثير
+            </p>
+          </div>
+          <div class="video">
+            <iframe
+              width="560"
+              height="315"
+              src="https://www.youtube.com/embed/LUbqRwp8NXI?rel=0"
+              title="YouTube video player"
+              frameborder="0"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+              allowfullscreen
+            ></iframe>
+          </div>
+          <div class="vid-caption">
+            <p class="caption">فيديو توضيحي عن التسويق الرقمي بشكل عام</p>
+          </div>
+          <div class="subtitle-1" id="subtitle-1">
+            <h2>اهمية التسويق الرقمي</h2>
+          </div>
+          <div class="text-1">
+            <p>
+              تساعد استراتيجيات التسويق الرقمي المسوقين في تحديد الأهداف،
+              واستهداف الجمهور، وتطوير خطة تسويق رقمية تصل إلى هذا الجمهور بشكل
+              أفضل. توفر هذه الاستراتيجيات التوجيه اللازم للحملة التسويقية أو
+              البرنامج المحدد وإطار عمل لتقييم النتائج
+            </p>
+            <p>
+              اليوم، يكون صار كل شيء رقميًا، وقد تم دمج التسويق الرقمي في كل
+              جانب من جوانب الأعمال تقريبًا، مما يغير كيفية اتصال الشركات
+              بالعملاء وتقديم قيمة لهم بشكل أساسي
+            </p>
+            <p>
+              لذا إذا لم تتمكن شركتك من تنفيذ استراتيجية تسويق رقمية وتنفيذها في
+              سوق عالمية، ومتطور بشكل متزايد عبر الإنترنت، فلن تتمكن ببساطة من
+              المنافسة
+            </p>
+          </div>
+          <div class="subtitle-2" id="subtitle-2">
+            <h2>بعض استراتيجيات التسويق الرقمي</h2>
+          </div>
+          <div class="text-2">
+            <ul>
+              <li>التسويق عبر الشبكات الاجتماعية</li>
+              <li>التسويق عبر الفيديو</li>
+              <li>التسويق على وسائل التواصل الاجتماعي</li>
+              <li>
+                الرسائل النصية (خدمات الرسائل القصيرة ورسائل الوسائط المتعددة)
+              </li>
+              <li>إعلانات الهاتف المحمول</li>
+              <li>التسويق وتصميم مواقع الويب</li>
+              <li>الإعلان على الشبكة الإعلانية</li>
+              <li>المدونات والكتب الإلكترونية</li>
+              <li>المتاجر الإلكترونية</li>
+              <li>الاعلان</li>
+            </ul>
+          </div>
+          <div class="img">
+            <img
+              src="images/digital marketing/التسويق-الرقمي.jpg"
+              alt="صورة للتسويق الرقمي"
+              title="التسويق الرقمي"
+            />
+          </div>
+          <div class="subtitle-3" id="subtitle-3">
+            <h2>مميزات التسويق الرقمي</h2>
+          </div>
+          <div class="text-3">
+            <p>
+              حسنًا، يعود التسويق الرقمي بالفائدة على كل من العملاء والشركات.
+              ومن خلال تخصيص المحتوى والعروض بشكل مناسب لكل فرد، يشعر العملاء أن
+              علامتك التجارية تعي احتياجاتهم وتستطيع أن توفر لهم خدمة أو منتج
+              قيّم. ويؤدي ذلك في النهاية إلى تعميق ثقتهم، وتحويلهم إلى مؤيدين
+              ومواليين للعلامة التجارية. هناك مزايا عديدة للتسويق الرقمي للشركات
+              أيضًا. وتتضمن ما يلي
+            </p>
+            <div class="examples-1">
+              <ul>
+                <li>زيادة معدل الوصول</li>
+                <p>
+                  يبدأ معظم الناس رحلات الشراء الخاصة بهم عبر الإنترنت، عبر
+                  مجموعة متنوعة من القنوات الرقمية المختلفة
+                </p>
+                <li>الاستهداف الدقيق</li>
+                <p>
+                  يمكن للمسوقين الوصول إلى مشترين أكثر أهلية من خلال الاستفادة
+                  من استراتيجيات SEO والوسائط الاجتماعية. وهذا بدوره يعزز من
+                  التحويلات والإيرادات والدفاع عن للعلامة التجارية
+                </p>
+                <li>السرعة</li>
+                <p>
+                  من السهل عادةً تعديل تكتيكات التسويق الرقمي إذا تغيرت أهدافك
+                </p>
+                <li>قابلية القياس</li>
+                <p>
+                  يوفر التسويق الرقمي درجة أكبر من السمات، بحيث يعرف المسوقون
+                  التكتيكات التي تدفع النمو فعلً
+                </p>
+              </ul>
+            </div>
+          </div>
+          <div class="img-1">
+            <img
+              src="images/digital marketing/التسويق-الرقمي-1.jpg"
+              alt="صورة للتسويق الرقمي"
+              title="التسويق"
+            />
+            <img
+              src="images/digital marketing/التسويق-الرقمي-2.jpg"
+              alt="صورة للتسويق الرقمي"
+              title="التسويق"
+            />
+          </div>
+          <div class="subtitle-4" id="subtitle-4">
+            <h2>مستقبل التسويق الرقمي</h2>
+          </div>
+          <div class="text-4">
+            <p>
+              بدأ الأمر برمته في استخدام الهواتف النقالة، مما أثر على التسويق
+              الرقمي بطريقةٍ كبيرةٍ. وقد تغير سلوك المستهلك مع مرور الوقت. يتوقع
+              العملاء الآن الحصول على المزيد من العلامات التجارية، وعدد اللحظات
+              الدقيقة. ما المقصود باللحظة الدقيقة؟ وهي تتضمن تفاعلًا بين العميل
+              والعلامة التجارية بلمسة زر وفي الوقت الحقيقي. ويكمن التحدي الذي
+              يواجه المسوِّقين الرقميين الآن في تداخل الأشخاص باللحظات الدقيقة
+              مع الرسائل التسويقية ذات الصلة التي تضيف إلى حياتهم بدلاً من
+              تغييرها
+            </p>
+            <p>
+              يتوقع العملاء الآن تجربة فريدة، ومتصلة، وسلسة عبر جميع القنوات
+              والوصول لإشباع فوري. لديك فقط لحظة دقيقة لتولي اهتمامهم وإلقاء
+              انتباههم نحو رسالة قوية، وتجربة ممتعة، ومضيئة. إذا لم تفعل،
+              فسينتقل العملاء إلى العرض التالي. وقد جعل ذلك الأساليب القديمة
+              للتسويق قديمة
+            </p>
+            <p>
+              :يجب أن يتبنى المسوِّقون الحديثون نهجًا متنقلًا أولاً مع جمهورهم
+              العالمي. يجب أن تضع في اعتبارك أن العملاء
+            </p>
+            <div class="examples-2">
+              <ul>
+                <li>يرغبون دومًا في أن يعاملوا معاملة فريدة</li>
+                <li>
+                  مسؤولون إنهم من يقررون متى وأين وكيف سيتفاعلون مع علامتك
+                  التجارية كما يريدون الحصول على تجربة سلسة والقدرة على بدء
+                  محادثة عبر أي قناة والتي يمكن أن عن طريق انتقالهم بسلاسة إلى
+                  قناة أخرى إذا اختاروا ذلك
+                </li>
+                <li>
+                  يرغبون في تقديم هذه الخدمة إلى أقل قدر ممكن من الوقت، ولكن
+                  بأقصى قدر ممكن من الراحة
+                </li>
+                <p>
+                  قد يكون هذا هو المستقبل، ولكن المستقبل الآن يحدث ذلك مباشرة
+                  أمام عيون الجميع لا يمكنك تحمل تخلفك عن الركب في الواقع يمكنك
+                  أن تكون بالمقدمة على نحو أفضل
+                </p>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- End components section -->
+  </body>
+</html>

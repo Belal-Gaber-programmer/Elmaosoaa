@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Voice Assistant</title>
+
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <script type="text/javascript" src="" defer></script>
+    <link rel="icon" href="../../../images/logo.icon" />
+  </head>
+  <body>
+    <div id="top-container">
+      <h1 id="title">Voice Assistant</h1>
+      <button id="start-btn" class="simple-btn">Start</button>
+    </div>
+
+    <div id="visualizer-container">
+      <canvas id="output" width="250" height="200"></canvas>
+      <h2 id="word-preview"></h2>
+      <h3 id="search-result"></h3>
+    </div>
+    <div class="ques-card">
+      <div class="some-ques">
+        <h3>Try To Say:</h3>
+        <div class="ques">
+          <p>Hello / Hi</p>
+          <p>climate change / climate changes / climate</p>
+          <p>harmful emissions / emissions</p>
+          <p>cyperattacks / cyperattack / cyper / cyper security</p>
+          <p>digital marketing / marketing</p>
+          <p class="note">
+            <strong>Note: </strong>the assistant speaks only English, If you say
+            any other words in another language it won't understand you.
+          </p>
+          <p class="note">
+            <strong>ملاحظة: </strong>المساعد يستطيع التعرف على اللغة الانجليزية
+            فقط, فاذا حاولت ان تتحدث معه بلغة اخرى لن يفهمك
+          </p>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

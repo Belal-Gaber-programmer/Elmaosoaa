@@ -1,0 +1,288 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>الموسوعة الحيوية</title>
+    <!-- Fontawsome library -->
+    <link rel="stylesheet" href="CSS/all.min.css" />
+    <!-- normalize library -->
+    <link rel="stylesheet" href="CSS/normalize.css" />
+    <!-- main css file -->
+    <link rel="stylesheet" href="CSS/main.css" />
+    <!-- website icon -->
+    <link rel="icon" href="images/logo.icon" />
+    <!-- google fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+    <!-- swiper's css file -->
+    <link rel="stylesheet" href="CSS/swiper-bundle.min.css" />
+    <!-- animate.css library -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+    />
+  </head>
+  <body>
+    <!-- Start loading animation section -->
+    <div class="loading">
+      <div class="dot dot-1"></div>
+      <div class="dot dot-2"></div>
+      <div class="dot dot-3"></div>
+    </div>
+    <script>
+      window.addEventListener("load", function () {
+        const loading = document.querySelector(".loading");
+        loading.className += " hidden"; //class loading + class hidden
+      });
+    </script>
+    <!-- End loading animation section -->
+
+    <!-- Start Header -->
+    <div class="header">
+      <div class="container">
+        <div class="logo">
+          <a href="index.html"
+            ><img src="images/الموسوعة-الحيوية.png" alt="logo"
+          /></a>
+        </div>
+        <div class="searchbox">
+          <div class="icon">
+            <i class="search fa fa-search" aria-hidden="true"></i>
+          </div>
+          <div class="input">
+            <input type="text" placeholder="search" id="search" />
+            <i class="clear fa fa-times"></i>
+          </div>
+        </div>
+        <script>
+          let search = document.querySelector(".search");
+          let clear = document.querySelector(".clear");
+
+          search.onclick = function () {
+            document.querySelector(".searchbox").classList.toggle("active");
+          };
+
+          clear.onclick = function () {
+            document.getElementById("search").value = "";
+          };
+        </script>
+        <div class="links">
+          <span class="icon">
+            <span></span>
+            <span></span>
+            <span></span>
+          </span>
+          <ul>
+            <li><a href="#topics">الموضوعات</a></li>
+            <li><a href="#about">عن الموسوعة</a></li>
+            <li><a href="#contact">تواصل معنا</a></li>
+            <li>
+              <a href="http://localhost:3000" target="_blank">المساعد الصوتي</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    <!-- End Header -->
+
+    <!-- Start Landing section -->
+    <div class="landing">
+      <div class="text">
+        <h1 class="heading">الموسوعة الحيوية</h1>
+        <p class="para">عالم الثقافة و التطلع</p>
+      </div>
+      <section class="slider swiper mySwiper">
+        <div class="wrapper swiper-wrapper">
+          <div class="slide swiper-slide">
+            <img
+              src="images/التسويق-الرقمي.png"
+              alt="صورة للتغيرات المناخية"
+              class="image1"
+            />
+          </div>
+          <div class="slide swiper-slide">
+            <img
+              src="images/الهجمات-السيبرانية.png"
+              alt="صورة للهجمات السيبرانية"
+              class="image2"
+            />
+          </div>
+          <div class="slide swiper-slide">
+            <img
+              src="images/التغيرات-المناخية.png"
+              alt="صورة للتسويق الرقمي"
+              class="image3"
+            />
+          </div>
+          <div class="slide swiper-slide">
+            <img
+              src="images/الانبعاثات-الضارة.png"
+              alt="صورة للانبعاثات الضارة"
+              class="image4"
+            />
+          </div>
+        </div>
+
+        <div class="swiper-button-next nav-btn"></div>
+        <div class="swiper-pagination"></div>
+      </section>
+      <!-- swiper JS -->
+      <script src="Js/swiper-bundle.min.js"></script>
+      <!-- initialize swiper -->
+      <script>
+        var swiper = new Swiper(".mySwiper", {
+          slidesPerView: 1,
+          loop: true,
+          pagination: {
+            el: ".swiper-pagination",
+            clickable: true,
+          },
+          navigation: {
+            nextEl: ".swiper-button-next",
+          },
+        });
+      </script>
+    </div>
+    <!-- End Landing section -->
+
+    <!-- Start topics section -->
+    <div class="topics" id="topics">
+      <div class="container">
+        <h2 class="special-heading">الموضوعات</h2>
+        <div class="topics-content">
+          <a href="climate-changes.html" target="_blank" class="card-link">
+            <div class="topic-card card-1">
+              <i class="fa-solid fa-earth-americas"></i>
+              <h3 class="text-1">التغيرات المناخية</h3>
+              <i class="fa-solid fa-backward arrow"></i>
+            </div>
+          </a>
+          <a href="harmful-emissions.html" target="_blank" class="card-link">
+            <div class="topic-card card-2">
+              <i class="fa-solid fa-industry"></i>
+              <h3 class="text-2">الانبعاثات الضارة</h3>
+              <i class="fa-solid fa-backward arrow"></i>
+            </div>
+          </a>
+          <a href="cyper-attacks.html" target="_blank" class="card-link">
+            <div class="topic-card card-3">
+              <i class="fa-solid fa-terminal"></i>
+              <h3 class="text-3">الهجمات السيبرانية</h3>
+              <i class="fa-solid fa-backward arrow"></i>
+            </div>
+          </a>
+          <a href="digital-marketing.html" target="_blank" class="card-link">
+            <div class="topic-card card-4">
+              <i class="fa-solid fa-bullhorn"></i>
+              <h3 class="text-4">التسويق الرقمي</h3>
+              <i class="fa-solid fa-backward arrow"></i>
+            </div>
+          </a>
+        </div>
+      </div>
+    </div>
+    <!-- End topics section -->
+
+    <!-- Start about section -->
+    <div class="about" id="about">
+      <div class="container">
+        <h2 class="special-heading special-heading-2">عن الموسوعة</h2>
+        <div class="about-content">
+          <div class="text">
+            <p class="p-1">
+              الموسوعة الحيوية هي موسوعة تضم عدة مواضيع نشطة في وقتنا الحالي مثل
+              (التغيرات المناخية - الانبعاثات الضارة - الهجمات السيبرانية -
+              التسويق الرقمي)
+            </p>
+            <p class="p-2">
+              ستقوم الموسوعة بضم عدد اكبر من المواضيع في المستقبل حيث تكون مليئة
+              بالموضوعات الشيقة و الحيوية
+            </p>
+            <p class="p-3">
+              تعمل الموسوعة على تثقيف كل من يتطلع على موضوعاتها حيث يوجد العديد
+              من المعلومات بكل موضوع بها
+            </p>
+            <p class="p-4">
+              توفر الموسوعة ميزة المساعد الصوتي حيث يمكنه ان يحدثك عن مواضيع
+              الموسوعة
+            </p>
+            <p class="p-5">
+              تقدم الموسوعة معلوماتها بالمواضيع المختلفة من مصادر عالمية و
+              موثوقة
+            </p>
+          </div>
+          <div class="images">
+            <img
+              class="img-1"
+              src="images/save-earth.jpg"
+              alt="صورة للتغيرات المناخية"
+              title="التغيرات المناخية"
+            />
+            <img
+              class="img-2"
+              src="images/digital-markiting.jpg"
+              alt=" صورة للتسويق الرقمي"
+              title="التسويق الرقمي"
+            />
+            <img
+              class="img-3"
+              src="images/cypersecurity.jpg"
+              alt=" صورة الهجمات السيبرانية"
+              title="الهجمات السيبرانية"
+            />
+            <img
+              src="images/harmful-emissions.jpg"
+              alt="صورة للانبعاثات الضارة"
+              title="الانبعاثات الضارة"
+            />
+          </div>
+          <script>
+            let div = document.querySelector(".images");
+
+            window.onscroll = function () {
+              if (this.scrollY >= 1200) {
+                div.classList.add("visible");
+              } else {
+                div.classList.remove("visible");
+              }
+            };
+          </script>
+        </div>
+      </div>
+    </div>
+    <!-- End about section -->
+
+    <!-- Start contact section -->
+    <div class="contact" id="contact">
+      <h2 class="special-heading special-heading-3">تواصل معنا</h2>
+      <div class="info">
+        <p class="label">تواصل معنا حينما شئت</p>
+        <a href="mailto:belalgaber743@gmail.com" class="e-mail"
+          >belalgaber743@gmail.com</a
+        >
+      </div>
+      <div class="social-media">
+        <a href="https://www.facebook.com/belal.gaber.7393" target="_blank"
+          ><i class="fab fa-facebook"></i
+        ></a>
+      </div>
+      <div class="phone">
+        <p>(+20)1279924644</p>
+        <p>(+20)1285014494</p>
+      </div>
+    </div>
+    <!-- End contact section -->
+
+    <!-- Start footer section -->
+    <div class="footer">
+      2022 <span>Belal-Gaber</span> &copy; All Right Reserved
+    </div>
+    <!-- End footer section -->
+  </body>
+</html>

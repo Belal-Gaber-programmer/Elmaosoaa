@@ -1,0 +1,251 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>الهجمات السيبرانية</title>
+    <!-- Fontawsome library -->
+    <link rel="stylesheet" href="CSS/all.min.css" />
+    <!-- normalize library -->
+    <link rel="stylesheet" href="CSS/normalize.css" />
+    <!-- cyper-attacks css file -->
+    <link rel="stylesheet" href="CSS/cyper-attacks.css" />
+    <!-- website icon -->
+    <link rel="icon" href="images/logo.icon" />
+    <!-- google fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <!-- Start loading animation section -->
+    <div class="loading">
+      <div class="dot dot-1"></div>
+      <div class="dot dot-2"></div>
+      <div class="dot dot-3"></div>
+    </div>
+    <script type="text/javascript">
+      window.addEventListener("load", function () {
+        const loading = document.querySelector(".loading");
+        loading.className += " hidden"; //class loading + class hidden
+      });
+    </script>
+    <!-- End loading animation section -->
+
+    <!-- Start Header -->
+    <div class="header">
+      <div class="container">
+        <div class="logo">
+          <a href="index.html" title="الصفحة الرئيسية"
+            ><img src="images/الموسوعة-الحيوية.png" alt="logo"
+          /></a>
+        </div>
+        <div class="searchbox">
+          <div class="icon">
+            <i class="search fa fa-search" aria-hidden="true"></i>
+          </div>
+          <div class="input">
+            <input type="text" placeholder="search" id="search" />
+            <i class="clear fa fa-times"></i>
+          </div>
+        </div>
+        <script>
+          let search = document.querySelector(".search");
+          let clear = document.querySelector(".clear");
+
+          search.onclick = function () {
+            document.querySelector(".searchbox").classList.toggle("active");
+          };
+
+          clear.onclick = function () {
+            document.getElementById("search").value = "";
+          };
+        </script>
+        <div class="links">
+          <span class="icon">
+            <span></span>
+            <span></span>
+            <span></span>
+          </span>
+          <ul>
+            <li><a href="#subtitle">تعريف مصطلح الهجمات السيبرانية</a></li>
+            <li>
+              <a href="#subtitle-1">انواع الهجمات السيبرانية</a>
+            </li>
+            <li>
+              <a href="#subtitle-2">اسباب الهجوم السيبراني</a>
+            </li>
+            <li>
+              <a href="#subtitle-3">اضرار الهجمات السيبرانية</a>
+            </li>
+            <li><a href="#subtitle-4">احصائيات الهجمات السيبرانية</a></li>
+            <li>
+              <a href="#subtitle-5">اشهر الهجمات السيبرانية عبر التاريخ</a>
+            </li>
+            <li>
+              <a href="http://localhost:3000" target="_blank">المساعد الصوتي</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    <!-- End Header -->
+    <!-- Start components section -->
+    <div class="components">
+      <div class="container">
+        <div class="components-content">
+          <h2 class="title">الهجمات السيبرانية</h2>
+          <p class="title-1">و مخاطرها</p>
+          <div class="subtitle" id="subtitle">
+            <h2>"تعريف مصطلح "الهجمات السيبرانية</h2>
+          </div>
+          <div class="text">
+            <p>
+              الهجوم السيبراني او ما يعرف ايضا بالهجمات الالكترونية في اجهزة
+              الحاسوب, أي هجوم هو يعتبر محاولة لفضح أو تغيير أو تعطيل أو تدمير
+              أو سرقة أو الحصول على وصول غير مصرح به أو استخدام غير مصرح به
+              للأصول, الهجوم السيبراني أو «الهجوم الإلكتروني» هو أي نوع من
+              المناورة الهجومية التي تستهدف أنظمة معلومات الكمبيوتر أو البنية
+              التحتية أو شبكات الكمبيوتر أو أجهزة الكمبيوتر الشخصية, المهاجم هو
+              شخص أو عملية تحاول الوصول إلى البيانات أو الوظائف أو المناطق
+              المحظورة الأخرى في النظام دون الحصول على إذن، ويحتمل أن يكون ذلك
+              بقصد ضار, اعتمادًا على السياق، يمكن أن تكون الهجمات الإلكترونية
+              جزءًا من الحرب الإلكترونية أو الإرهاب الإلكتروني. يمكن استخدام
+              الهجوم الإلكتروني من قِبل دول ذات سيادة أو أفراد أو مجموعات أو
+              مجتمع أو منظمات أو حتى عصابات، وقد تنشأ هذه الهجمات الإلكترونية
+              (لسيبرانية) من مصدر مجهول
+            </p>
+          </div>
+
+          <div class="video">
+            <iframe
+              width="560"
+              height="315"
+              src="https://www.youtube.com/embed/GX_XsdNv1PY?rel=0"
+              title="YouTube video player"
+              frameborder="0"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+              allowfullscreen
+            ></iframe>
+          </div>
+          <div class="vid-caption">
+            <p class="caption">فيديو توضيحي عن مدى خطورة الهجمات السيبرانية</p>
+          </div>
+          <div class="subtitle-1" id="subtitle-1">
+            <h2>انواع الهجمات السيبرانية</h2>
+            <p>هناك العديد من انواع الهجمات السيبرانية, وفيما يأتي اشهرها</p>
+          </div>
+          <div class="text-1">
+            <p class="examples">البرامج الضارة</p>
+            <p class="examples">تصيد المعلومات</p>
+            <p class="examples">هجوم الوسيط</p>
+            <p class="examples">هجمات الحرمان من الخدمات</p>
+            <p class="examples">الهجمات دون انتظار او يوم الصفر</p>
+            <p class="examples">(DNS)الاتصال النفقي عبر اسماء النطاقات</p>
+          </div>
+          <div class="subtitle-2" id="subtitle-2">
+            <h2>اسباب الهجوم السيبراني</h2>
+          </div>
+          <div class="text-2">
+            <p>
+              يُعزى حدوث الهجمات السيبرانية إلى العديد من الأسباب، ومنها الحرب
+              الإلكترونية والإرهاب الإلكتروني، كما يفعل القراصنة، أي أن الدوافع
+              وراء تلك الهجمات قد تختلف وفقًا لمنفذيها، وتندرج دوافع الهجوم
+              السيبراني ضمن 3 فئات، وهي: إجرامية وشخصية وسياسية
+            </p>
+            <p>
+              في حالة الدوافع الإجرامية، يسعى منفذو الهجوم إلى تحقيق مكاسب مالية
+              عن طريق اختراق البيانات وسرقة الأموال، ومن الأمثلة الشائعة على
+              الدافع الشخصي سرقة بعض الموظفين غير الراضين البيانات أو الأموال أو
+              تعطيل نظام الشركة، لأخذ حقهم بيدهم، بينما يسعى المهاجمون ذوو
+              الدوافع الاجتماعية والسياسية إلى جذب الانتباه إلى قضاياهم
+            </p>
+            <div class="image">
+              <img
+                class="img-1"
+                src="images/cyper attacks/الهجمات-السيبرانية-3.png"
+                alt="صورة للهجمات السيبرانية"
+                title="الهجمات السيبرانية"
+              />
+            </div>
+          </div>
+          <div class="subtitle-3" id="subtitle-3">
+            <h2>اضرار الهجمات السيبرانية</h2>
+          </div>
+          <div class="text-3">
+            <p class="sub-subtitle">
+              :من الأضرار الأخرى التي قد تنجم عن تلك الهجمات ما يأتي
+            </p>
+            <p>.إلحاق الأذى بالعلامات التجارية والسمعة</p>
+            <p>.تعطيل أعمال الأفراد والشركات وغيرها</p>
+            <p>
+              .خسارة المؤسسات والأفراد أموالًا طائلة، من خلال فرض نفقات إضافية
+              لإصلاح الأضرار والوقاية منها
+            </p>
+            <p>.سرقة الملكية الفكرية</p>
+            <p>.الانخفاض المفاجئ في إيرادات المؤسسات والشركات</p>
+          </div>
+          <div class="subtitle-4" id="subtitle-4">
+            <h2>احصائيات الهجمات السيبرانية</h2>
+          </div>
+          <div class="text-4">
+            <p>
+              يتوقع الخبراء أنه وبحلول نهاية عام 2021 أن تُكلّف الجرائم
+              الإلكترونية العالم نحو 6 تريليونات دولار، وتُشير التقديرات إلى أنّ
+              قطاع الأمن السيبراني سيجني 170.4 مليار دولار في عام 2022 لمواجهة
+              تلك الجرائم، وبما أن هذا القطاع يُعاني من نقص في موظفيه، لذا
+              يُتوقع استحداث 3.5 مليون وظيفة شاغرة في عام 2021
+            </p>
+            <p>
+              منذ انتشار وباء كورونا، أُرغم الأشخاص على العمل عن بعد، مما أدى
+              إلى زيادة متوسط تكلفة الهجمات السيبرانية 137,000 دولار، بينما
+              ازدادت الرسائل الاحتيالية المتعلقة بالوباء بمعدل 240 مليون رسالة
+              يوميًّا، وأشارت الإحصائيات إلى أن 85% من الهجمات استهدفت أفرادًا،
+              و61% منها كانت بسبب استخدام بيانات مسروقة او مُخترقة
+            </p>
+            <p>
+              ارتفعت نسبة التصيد الاحتيالي من 22% في عام 2020 إلى 36% في عام
+              2021، وبالنسبة للبرامج الضارة، فقد أدت إلى خسارة أموال طائلة لدفع
+              الفدية التي بلغت خسائرها نحو 350 مليون دولار في عام 2020، أي 311%
+              من قيمة خسائر عام 2019، ومن المتوقع أن تتعرّض الشركات لهجمات
+              الفدية كل 11 ثانية في عام 2020، بمعنى خسارة 20 مليار دولار
+            </p>
+          </div>
+          <div class="subtitle-5" id="subtitle-5">
+            <h2>اشهر الهجمات السيبرانية عبر التاريخ</h2>
+          </div>
+          <div class="text-5">
+            <p class="sub-subtitle-1">روبرت موريس عام 1988</p>
+            <p>
+              ابتكر روبرت دودة إلكترونية، والتي تُعد الأولى في تاريخ الأمن
+              السيبراني، مدعيًا أنّ نيته تحديد مجال اتّساع الفضاء السيبراني،
+              إلّا أنّها واجهت خطأ فادحًا تسبب في تحولها إلى فيروس انتشر في
+              أجهزة الحاسوب، لتتسبب بخسائر تراوحت بين 10-100 مليون دولار
+            </p>
+            <p class="sub-subtitle-2">مايكل كالسي عام 2000</p>
+            <p>
+              عُرف مايكل باسم فتى المافيا، وعندما كان يبلغ من العمر 25 عامًا،
+              قرر شن هجوم على مواقع بارزة بما في ذلك Amazon، وCNN، وeBay،
+              وYahoo!، ممّا أدى إلى إحداث ضرر بقيمة تجاوزت مليار دولار، وحُكم
+              عليه بالسجن 8 أشهر ضمن المراقبة
+            </p>
+            <p class="sub-subtitle-3">
+              تعرُّض موقع جوجل الصيني لهجوم سيبراني عام 2009
+            </p>
+            <p>
+              اكتًشفت ثغرة أمنية في موقع جوجل الصيني، ممّا سمح بتسلسل المخترقين
+              إلى خوادم موقع جوجل، ونشر العديد من الديدان والفيروسات التي كان
+              الغرض منها توريط الحكومة الصينية، بسبب انتهاكاتها المزعومة عن طريق
+              الوصول إلى البريد الإلكتروني لنشطاء حقوق الإنسان
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- End components section -->
+  </body>
+</html>

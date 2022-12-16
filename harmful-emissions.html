@@ -1,0 +1,264 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>الانبعاثات الضارة</title>
+    <!-- Fontawsome library -->
+    <link rel="stylesheet" href="CSS/all.min.css" />
+    <!-- normalize library -->
+    <link rel="stylesheet" href="CSS/normalize.css" />
+    <!-- harmful-emissions css file -->
+    <link rel="stylesheet" href="CSS/harmful-emissions.css" />
+    <!-- website icon -->
+    <link rel="icon" href="images/logo.icon" />
+    <!-- google fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <!-- Start loading animation section -->
+    <div class="loading">
+      <div class="dot dot-1"></div>
+      <div class="dot dot-2"></div>
+      <div class="dot dot-3"></div>
+    </div>
+    <script type="text/javascript">
+      window.addEventListener("load", function () {
+        const loading = document.querySelector(".loading");
+        loading.className += " hidden"; //class loading + class hidden
+      });
+    </script>
+    <!-- End loading animation section -->
+
+    <!-- Start Header -->
+    <div class="header">
+      <div class="container">
+        <div class="logo">
+          <a href="index.html" title="الصفحة الرئيسية"
+            ><img src="images/الموسوعة-الحيوية.png" alt="logo"
+          /></a>
+        </div>
+        <div class="searchbox">
+          <div class="icon">
+            <i class="search fa fa-search" aria-hidden="true"></i>
+          </div>
+          <div class="input">
+            <input type="text" placeholder="search" id="search" />
+            <i class="clear fa fa-times"></i>
+          </div>
+        </div>
+        <script>
+          let search = document.querySelector(".search");
+          let clear = document.querySelector(".clear");
+
+          search.onclick = function () {
+            document.querySelector(".searchbox").classList.toggle("active");
+          };
+
+          clear.onclick = function () {
+            document.getElementById("search").value = "";
+          };
+        </script>
+        <div class="links">
+          <span class="icon">
+            <span></span>
+            <span></span>
+            <span></span>
+          </span>
+          <ul>
+            <li><a href="#subtitle">مقدمة</a></li>
+            <li>
+              <a href="#subtitle-1">ما هي الانبعاثات الضارة ؟</a>
+            </li>
+            <li>
+              <a href="#subtitle-2">تأثير تلك الانبعاثات على الانسان</a>
+            </li>
+            <li>
+              <a href="#subtitle-3">تأثير تلك الانبعاثات على البيئة</a>
+            </li>
+            <li>
+              <a href="#subtitle-4">كيفية الحد من تلك الانبعاثات ؟</a>
+            </li>
+            <li>
+              <a href="http://localhost:3000" target="_blank">المساعد الصوتي</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    <!-- End Header -->
+    <!-- Start components section -->
+    <div class="components">
+      <div class="container">
+        <div class="components-content">
+          <h2 class="title">الانبعاثات الضارة</h2>
+          <p class="title-1">و تلوث الهواء</p>
+          <div class="subtitle" id="subtitle">
+            <h2>مقدمة</h2>
+          </div>
+          <div class="text">
+            <p>
+              مما لا شك فيه ان كوكب الارض هو الكوكب الوحيد الصالح للحياة في
+              مجموعتنا الشمسية, فاذا نظرنا سنرى انه يحتوي على جميع العناصر التي
+              تساعد على وجود الحياة منها مصادر المياه المتنوعة - و المناخ
+              المعتدل عن بقية الكواكب - و المعادن و مصادر الطاقة - وغيرها
+              الكثير. فيجب علينا الحفاظ على تلك النعمة التي انعم الله علينا بها.
+              لكن مع تطور الصناعات و اكتشاف الانسان اكتشافات عديدة ادت الى تدهور
+              نظامنا البيئي و بالأخص تلوث الهواء و الانبعاثات الضارة
+            </p>
+          </div>
+
+          <div class="video">
+            <iframe
+              width="560"
+              height="315"
+              src="https://www.youtube.com/embed/e6rglsLy1Ys?rel=0"
+              title="YouTube video player"
+              frameborder="0"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+              allowfullscreen
+            ></iframe>
+          </div>
+          <div class="vid-caption">
+            <p class="caption">
+              فيديو توضيحي عن الانبعاثات الضارة و تلوث الهواء
+            </p>
+          </div>
+          <div class="subtitle-1" id="subtitle-1">
+            <h2>ما هي الانبعاثات الضارة ؟</h2>
+          </div>
+          <div class="text-1">
+            <p>
+              الانبعاثات الضارة تكون عبارة عن ملوثات الهواء الرئيسية الموجودة في
+              معظم المناطق الحضرية وأول أكسيد الكربون وأكاسيد النيتروجين،
+              وأكاسيد الكبريت، والهيدروكربونات، والجسيمات (سواء الصلبة أو
+              السائلة). تنتشر هذه الملوثات في جميع أنحاء الغلاف الجوي في العالم
+              في تركيزات عالية بما يكفي ليسبب مشاكل صحية خطيرة تدريجيًا.
+            </p>
+          </div>
+
+          <div class="subtitle-2" id="subtitle-2">
+            <h2>تأثير تلك الانبعاثات على الانسان</h2>
+          </div>
+          <div class="text-2">
+            <p class="sub-subtitle">
+              يعاني الناس من مجموعة واسعة من الآثار الصحية من التعرض لتلوث
+              الهواء. يمكن تقسيم التأثيرات إلى تأثيرات قصيرة المدى وآثار طويلة
+              المدى.
+            </p>
+            <p>
+              تشمل التأثيرات قصيرة المدى ، والتي تكون مؤقتة ، أمراضًا مثل
+              الالتهاب الرئوي أو التهاب الشعب الهوائية. وتشمل أيضًا المضايقات
+              مثل تهيج الأنف أو الحلق أو العينين أو الجلد. يمكن أن يسبب تلوث
+              الهواء أيضًا الصداع والدوخة والغثيان. تعتبر الروائح الكريهة
+              الناتجة عن المصانع أو القمامة أو أنظمة الصرف الصحي تلوثًا للهواء
+              أيضًا. هذه الروائح أقل خطورة ولكنها لا تزال مزعجة.
+            </p>
+            <p>
+              يمكن أن تستمر التأثيرات طويلة المدى لتلوث الهواء لسنوات أو مدى
+              الحياة بأكملها. يمكن أن تؤدي حتى إلى وفاة الشخص. تشمل الآثار
+              الصحية طويلة المدى لتلوث الهواء أمراض القلب وسرطان الرئة وأمراض
+              الجهاز التنفسي مثل انتفاخ الرئة. يمكن أن يتسبب تلوث الهواء أيضًا
+              في حدوث أضرار طويلة الأمد للأعصاب والمخ والكلى والكبد والأعضاء
+              الأخرى. يشك بعض العلماء في أن ملوثات الهواء تسبب تشوهات خلقية.
+              يموت ما يقرب من 2.5 مليون شخص في جميع أنحاء العالم كل عام من آثار
+              تلوث الهواء الخارجي أو الداخلي.
+            </p>
+            <p>
+              يتفاعل الناس بشكل مختلف مع أنواع مختلفة من تلوث الهواء. غالبًا ما
+              يكون الأطفال الصغار وكبار السن ، الذين تميل أجهزتهم المناعية إلى
+              الضعف ، أكثر حساسية للتلوث. يمكن أن تتفاقم حالات مثل الربو وأمراض
+              القلب وأمراض الرئة بسبب التعرض لتلوث الهواء. طول التعرض وكمية ونوع
+              الملوثات هي أيضا عوامل.
+            </p>
+            <div class="image">
+              <img
+                class="img-1"
+                src="images/harmful emissions/الانبعاثات-الضارة-1.png"
+                alt="صورة الانبعاثات الضارة"
+                title="التوعية"
+              />
+            </div>
+            <script>
+              let image1 = document.querySelector(".img-1");
+
+              window.onscroll = function () {
+                if (this.scrollY >= 1100) {
+                  image1.classList.add("show-1");
+                } else {
+                  image1.classList.remove("show-1");
+                }
+              };
+            </script>
+          </div>
+
+          <div class="subtitle-3" id="subtitle-3">
+            <h2>تأثير تلك الانبعاثات على البيئة</h2>
+          </div>
+          <div class="text-3">
+            <p>
+              مثل البشر والحيوانات والنباتات ، يمكن أن تعاني النظم البيئية
+              بأكملها من آثار تلوث الهواء. الضباب ، مثل الضباب الدخاني ، هو نوع
+              مرئي من تلوث الهواء يحجب الأشكال والألوان. يمكن أن يؤدي تلوث
+              الهواء الضبابي إلى إسكات الأصوات.
+            </p>
+            <p>
+              تعود جزيئات تلوث الهواء في النهاية إلى الأرض. يمكن أن يؤدي تلوث
+              الهواء إلى تلوث سطح المسطحات المائية والتربة بشكل مباشر. هذا يمكن
+              أن يقتل المحاصيل أو يقلل من محصولها. يمكن أن تقتل الأشجار الصغيرة
+              والنباتات الأخرى.
+            </p>
+            <p>
+              يمكن لجزيئات ثاني أكسيد الكبريت وأكسيد النيتروجين الموجودة في
+              الهواء أن تخلق أمطارًا حمضية عندما تختلط مع الماء والأكسجين في
+              الغلاف الجوي. تأتي ملوثات الهواء هذه في الغالب من محطات الطاقة
+              التي تعمل بالفحم والسيارات. عندما يسقط المطر الحمضي على الأرض ،
+              فإنه يضر بالنباتات عن طريق تغيير تكوين التربة ؛ يحط من جودة المياه
+              في الأنهار والبحيرات والجداول ؛ إتلاف المحاصيل؛ ويمكن أن تتسبب في
+              تحلل المباني والآثار.
+            </p>
+            <p>
+              مثل البشر ، يمكن أن تعاني الحيوانات من آثار صحية من التعرض لتلوث
+              الهواء. تُعزى العيوب الخلقية والأمراض وانخفاض معدلات الإنجاب إلى
+              تلوث الهواء.
+            </p>
+          </div>
+          <div class="subtitle-4" id="subtitle-4">
+            <h2>كيفية الحد من تلك الانبعاثات ؟</h2>
+          </div>
+          <div class="text-4">
+            <p>
+              يبدأ العمل بالتحول من الاعتماد على الوقود الأحفوري لتوليد الكهرباء
+              إلى استخدام الطاقة النظيفة التي تحد من الكربون في إنتاج الكهرباء.
+              · ومع زيادة كميات الطاقة النظيفة، يمكن حينئذ أن يؤدي التحول الهائل
+              في التزويد بالكهرباء إلى زيادة فرص الحصول على الطاقة النظيفة
+              واستبدال أنواع الوقود الملوثة
+            </p>
+            <p>
+              عدم الاعتماد على الوقود الاحفوري في وسائل المواصلات و النقل بدلا
+              من ذلك استخدام الكهرباء كمصدر طاقة اساسي و بالفعل قد بدأت شركات
+              تصنيع السيارات و وسائل النقل في اتباع هذا الطريق و من اشهر الشركات
+              المتخصصة في صناعة السيارات الكهربائية هي شركة تسلا التابعة لرجل
+              الاعمال الكندي
+            </p>
+            <p>
+              زراعة النباتات و الاشجار لزيادة نسبة غاز الاكسوجين و بالتالي
+              انخفاض نسبة ثاني اكسيد الكربون
+            </p>
+            <p>
+              و بالطبع نشر الوعي حيث يجب تشجيع عائلاتكم و اصدقائكم و زملائكم في
+              العمل على تقليل تلك الانبعاثات و لو بأقل المساهمات
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- End components section -->
+  </body>
+</html>
